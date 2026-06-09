@@ -23,5 +23,28 @@ button{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+/* 虹色アニメーション */
+@keyframes rainbow {
+    0% { background-color: red; }
+    20% { background-color: orange; }
+    40% { background-color: yellow; }
+    60% { background-color: green; }
+    80% { background-color: blue; }
+    100% { background-color: purple; }
+}
 
+.rainbow-bg {
+    animation: rainbow 2s linear infinite;
+}
+
+/* 不吉アニメーション（黒→赤点滅） */
+@keyframes ominous {
+    0% { background-color: black; }
+    50% { background-color: darkred; }
+    100% { background-color: black; }
+}
+
+.ominous-bg {
+    animation: ominous 0.8s infinite;
 }
